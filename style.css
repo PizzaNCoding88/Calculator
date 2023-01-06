@@ -12,10 +12,10 @@
   
   body {
     min-height: 100vh;
+    background-color: var(--dark-background);
   }
   
   html {
-    background-color: var(--dark-background);
     font-size: 62.5%; /*1rem=10px */
     -webkit-text-size-adjust: none; /* for iOS Safari */
     text-size-adjust: none; /* for other mobile browsers */
@@ -66,12 +66,11 @@
   /*STYLING*/
 
   .light-mode{
-    --calculator: #5B5B5B;
-    --buttons: #EFEEEE;
+    --calculator: #fCFCF3;
+    --buttons: #FFEECA;
     --buttons-num: #343333;
-    --equal: #FCB96E;
-    --display: #CFE0CF;
-    --dark-background: #121212;
+    --equal: #BEB87F;
+    --dark-background: #d1d0d0;
   }
 
   .calculator {

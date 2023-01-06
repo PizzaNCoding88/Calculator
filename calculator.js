@@ -1,6 +1,6 @@
 const buttons = document.querySelectorAll(".button");
 const display = document.querySelector(".display-digits");
-const modeSwitch = document.querySelector(".switch img");
+
 
 let calculation = [];
 let calculationString;
@@ -35,15 +35,18 @@ buttons.forEach(btn => btn.addEventListener("click", ()=> calculate(btn)))
 
 
 //DARK/LIGHT MODE SWITCH
-
+const modeSwitch = document.querySelector(".switch img");
+const body = document.querySelector("body");
 let darkMode = true;
 
 modeSwitch.addEventListener("click", () => {
     if(darkMode){
         modeSwitch.src = "icons/brightness.png";
+        body.classList.toggle("light-mode");
         darkMode = false;
     } else {
         modeSwitch.src = "icons/moon.png";
+        body.classList.toggle("light-mode");
         darkMode = true;
     }
 })
