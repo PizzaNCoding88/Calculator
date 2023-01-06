@@ -14,7 +14,7 @@
     min-height: 100vh;
     background-color: var(--dark-background);
 
-    transition: transform 550ms ease-in-out;
+    transition: transform 550ms ease-in-out, all 1000ms ease-in-out;
   }
   
   html {
