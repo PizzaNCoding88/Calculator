@@ -13,6 +13,8 @@
   body {
     min-height: 100vh;
     background-color: var(--dark-background);
+
+    transition: transform 550ms ease-in-out;
   }
   
   html {
@@ -71,6 +73,9 @@
     --buttons-num: #343333;
     --equal: #BEB87F;
     --dark-background: #d1d0d0;
+
+    transform: rotateY(360deg);
+    
   }
 
   .calculator {
