@@ -15,7 +15,16 @@
     background-color: var(--dark-background);
 
     transition: transform 550ms ease-in-out, all 1000ms ease-in-out;
-  }
+
+    animation-name: fadein ;
+    animation-duration: 2000ms;
+    animation-iteration-count: 1;
+    }
+
+    @keyframes fadein{
+      from{opacity:0}
+      to{opacity: 1}
+    }
   
   html {
     font-size: 62.5%; /*1rem=10px */
@@ -51,7 +60,19 @@
       cursor: pointer;
       border: none;
   }
+  
+  /*STYLING*/
 
+  .light-mode{
+    --calculator: #fCFCF3;
+    --buttons: #FFEECA;
+    --buttons-num: #343333;
+    --equal: #BEB87F;
+    --dark-background: #d1d0d0;
+
+    transform: rotateY(360deg);
+    
+  }
   :root{
     --calculator: #5B5B5B;
     --buttons: #EFEEEE;
@@ -65,18 +86,6 @@
 
   }
 
-  /*STYLING*/
-
-  .light-mode{
-    --calculator: #fCFCF3;
-    --buttons: #FFEECA;
-    --buttons-num: #343333;
-    --equal: #BEB87F;
-    --dark-background: #d1d0d0;
-
-    transform: rotateY(360deg);
-    
-  }
 
   .calculator {
     position: absolute;
